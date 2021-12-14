@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/hello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ImageView
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:src="@drawable/ic_mic"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints" />
+    <RelativeLayout
+        android:id="@+id/img_mic_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_mic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/bg1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bg01" />
+
+        <ImageView
+            android:id="@+id/bg2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bg02" />
+
+        <ImageView
+            android:id="@+id/bg3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bg03" />
+
+        <ImageView
+            android:id="@+id/bg4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bg04" />
+
+        <ImageView
+            android:id="@+id/bg5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bg05" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txvlistening"
+        android:visibility="gone"
+        android:layout_below="@+id/img_mic_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textSize="26sp"
+        android:text="Listening..."
+        android:gravity="center"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_below="@+id/img_mic_rel"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="366dp"
+        android:layout_height="295dp"
+        android:text="" />
+
+
+</RelativeLayout>
